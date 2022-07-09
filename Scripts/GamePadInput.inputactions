@@ -49,6 +49,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "HoldButton",
+                    "type": "Button",
+                    "id": "f264bc03-4aca-41f2-9ce5-5b249b688526",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -67,6 +76,17 @@
                     "name": "",
                     "id": "37d860bc-a340-4c10-bd66-eb401b1feb8a",
                     "path": "<HID::XiYuan GAME CONTOROLER>/hat/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3cd9d156-3f7c-4b20-9231-2c25b8a49fce",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -98,6 +118,17 @@
                 },
                 {
                     "name": "",
+                    "id": "6a53ee79-c114-4086-ace2-38ee63bd111d",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c0ed77a8-6a04-401b-837d-9d8731ebc99b",
                     "path": "<AndroidGamepad>/leftStick/up",
                     "interactions": "",
@@ -120,6 +151,17 @@
                 },
                 {
                     "name": "",
+                    "id": "9dd05ee1-6d7a-407e-89a7-ebbc11999f93",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "bb29bab4-fa06-4412-a704-464155724e71",
                     "path": "<AndroidGamepad>/leftStick/down",
                     "interactions": "",
@@ -133,6 +175,17 @@
                     "name": "",
                     "id": "f5a65b96-bf1a-4e92-a720-0860542e5f38",
                     "path": "<HID::XiYuan GAME CONTOROLER>/hat/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "604ce4f6-ee97-4ae0-9ed7-06bc66770022",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -203,6 +256,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "SelectButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cd71fa48-29eb-4421-a993-0cf9bb423e90",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HoldButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c02f200e-b1f3-457e-8257-5670c50b54a0",
+                    "path": "<AndroidGamepad>/buttonSouth",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HoldButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

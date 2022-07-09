@@ -9,13 +9,26 @@ public class CameraController : MonoBehaviour
     public GameObject textGO;
     public GameObject pointer;
     float selectPressend = 0f;
-    private const float _maxDistance = 6f;
+    private const float _maxDistance = 7f;
     private GameObject _gazedAtObject = null;
     private LineRenderer lineRenderer;
     void Awake(){
         gp = new GamePadInput();
+        // Handling button click functionality functionality
         gp.GamePlay.SelectButton.performed += ctx => selectPressend = 1f;
         gp.GamePlay.SelectButton.canceled += ctx => selectPressend  = 0f;
+        // Handling holding button functionality
+        gp.GamePlay.HoldButton.performed += ctx => {
+            if(_gazedAtObject && _gazedAtObject.name.Equals("TV Mount")){
+                _gazedAtObject.SendMessage("OnPointerHold",true);
+            }
+        };
+        gp.GamePlay.HoldButton.canceled += ctx => {
+            if(_gazedAtObject && _gazedAtObject.name.Equals("TV Mount")){
+                _gazedAtObject.SendMessage("OnPointerHold",false);
+            }
+        };
+        // Pointer functinaity
         lineRenderer = pointer.GetComponent<LineRenderer>();
     }
     void Update()
